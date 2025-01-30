@@ -5,94 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="./assets/logo-header.png" />
     <title>Browse 4 Pets</title>
   </head>
   <body>
     <header>
       <nav
-        class="h-20 w-screen fixed top-0 left-0 px-6 lg:px-24 flex justify-between items-center align-middle bg-orange-200/20"
+        class="z-50 h-20 w-screen fixed top-0 left-0 border-b lg:border-none bg-orange-200/20"
       >
-        <div class="h-fit flex gap-3 justify-center items-center align-middle">
-          <div>
-            <img
-              class="w-10 select-none"
-              draggable="false"
-              src="./assets/logo-header.png"
-              alt="logo"
-            />
-          </div>
-          <div class="hidden lg:block">
-            <p class="text-2xl font-semibold">
-              Browse<span class="text-yellow-300">4</span>Pets
-            </p>
-          </div>
-        </div>
-        <div class="gap-5 hidden lg:flex">
-          <a
-            target="_blank"
-            class="hover:text-yellow-300 transition-all duration-300"
-            href="/"
-            >Find a pet</a
-          >
-          <a
-            target="_blank"
-            class="hover:text-yellow-300 transition-all duration-300"
-            href="/"
-            >Breeds</a
-          >
-          <a
-            target="_blank"
-            class="hover:text-yellow-300 transition-all duration-300"
-            href="/"
-            >Contact us</a
-          >
-        </div>
-        <div class="hidden lg:flex gap-4 items-center">
-          <div class="flex gap-2">
-            <svg width="23" height="24" viewBox="0 0 23 24" fill="none">
-              <path
-                d="M22.555 13.662L20.655 6.826C20.0981 4.82333 18.8877 3.06429 17.2163 1.82847C15.5449 0.592652 13.5084 -0.0490142 11.4304 0.00546594C9.3525 0.0599461 7.35239 0.807446 5.74805 2.12915C4.1437 3.45085 3.02719 5.2709 2.57598 7.3L1.10498 13.915C0.942497 14.6459 0.946254 15.404 1.11597 16.1333C1.2857 16.8626 1.61705 17.5445 2.08556 18.1286C2.55408 18.7126 3.1478 19.184 3.82289 19.508C4.49798 19.8319 5.2372 20 5.98598 20H7.09998C7.3295 21.1303 7.94271 22.1465 8.83572 22.8764C9.72874 23.6063 10.8466 24.005 12 24.005C13.1533 24.005 14.2712 23.6063 15.1642 22.8764C16.0573 22.1465 16.6705 21.1303 16.9 20H17.738C18.5088 20.0001 19.2692 19.8219 19.9597 19.4794C20.6503 19.137 21.2523 18.6395 21.7188 18.0259C22.1853 17.4122 22.5036 16.699 22.6488 15.942C22.794 15.185 22.7613 14.4047 22.555 13.662ZM12 22C11.3817 21.9974 10.7794 21.8039 10.2753 21.4459C9.77121 21.0879 9.39007 20.5829 9.18398 20H14.816C14.6099 20.5829 14.2288 21.0879 13.7247 21.4459C13.2206 21.8039 12.6182 21.9974 12 22ZM20.126 16.815C19.8473 17.1847 19.4863 17.4843 19.0716 17.69C18.6569 17.8957 18.1999 18.0018 17.737 18H5.98598C5.53677 17.9999 5.0933 17.899 4.68832 17.7046C4.28334 17.5102 3.92719 17.2273 3.64614 16.8769C3.3651 16.5265 3.16634 16.1174 3.06454 15.6798C2.96274 15.2423 2.9605 14.7875 3.05798 14.349L4.52798 7.733C4.88233 6.13921 5.75929 4.7096 7.01944 3.67145C8.27959 2.63329 9.85061 2.04617 11.4828 2.00341C13.1149 1.96066 14.7145 2.46472 16.0273 3.43547C17.3401 4.40622 18.2907 5.78795 18.728 7.361L20.628 14.197C20.7535 14.6424 20.7735 15.1109 20.6864 15.5653C20.5992 16.0198 20.4074 16.4477 20.126 16.815Z"
-                fill="#111111"
-              />
-            </svg>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M23.707 22.293L17.738 16.324C19.3647 14.3346 20.1644 11.7961 19.9719 9.23356C19.7793 6.67103 18.6092 4.28053 16.7036 2.55652C14.798 0.83251 12.3026 -0.0931084 9.73367 -0.0288765C7.16472 0.0353553 4.71873 1.08452 2.90164 2.90161C1.08455 4.7187 0.035382 7.16469 -0.0288498 9.73364C-0.0930816 12.3026 0.832537 14.798 2.55655 16.7036C4.28056 18.6092 6.67106 19.7793 9.23359 19.9718C11.7961 20.1644 14.3346 19.3646 16.324 17.738L22.293 23.707C22.4816 23.8892 22.7342 23.99 22.9964 23.9877C23.2586 23.9854 23.5094 23.8802 23.6948 23.6948C23.8803 23.5094 23.9854 23.2586 23.9877 22.9964C23.99 22.7342 23.8892 22.4816 23.707 22.293ZM10 18C8.41778 18 6.87106 17.5308 5.55546 16.6518C4.23987 15.7727 3.21449 14.5233 2.60899 13.0615C2.00349 11.5997 1.84506 9.99113 2.15374 8.43928C2.46243 6.88743 3.22435 5.46197 4.34317 4.34315C5.46199 3.22433 6.88746 2.4624 8.4393 2.15372C9.99115 1.84504 11.5997 2.00346 13.0615 2.60896C14.5233 3.21446 15.7727 4.23984 16.6518 5.55544C17.5308 6.87103 18 8.41775 18 10C17.9976 12.121 17.154 14.1544 15.6543 15.6542C14.1545 17.154 12.121 17.9976 10 18Z"
-                fill="#111111"
-              />
-            </svg>
-          </div>
-          <div class="flex gap-2">
-            <button
-              class="border-2 border-yellow-300 bg-transparent px-5 py-2 rounded-lg cursor-pointer hover:bg-yellow-300 transition-all duration-500"
-            >
-              Login
-            </button>
-            <button
-              class="border-2 border-yellow-300 bg-yellow-300 px-5 py-2 rounded-lg cursor-pointer hover:bg-yellow-400 hover:border-yellow-400 transition-all duration-500"
-            >
-              Register
-            </button>
-          </div>
-        </div>
-        <label class="lg:hidden scale-[2]">
+        <div
+          class="max-w-[1200px] mx-auto h-20 w-screen px-6 lg:px-24 flex justify-between items-center align-middle"
+        >
           <div
-            class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
+            class="h-fit flex gap-3 justify-center items-center align-middle"
           >
-            <input class="hidden peer" type="checkbox" />
-            <div
-              class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
-            ></div>
-            <div
-              class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
-            ></div>
-            <div
-              class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
-            ></div>
+            <div>
+              <img
+                class="w-10 select-none"
+                draggable="false"
+                src="./assets/logo-header.png"
+                alt="logo"
+              />
+            </div>
+            <div class="hidden lg:block">
+              <p class="text-2xl font-semibold">
+                Browse<span class="text-yellow-300">4</span>Pets
+              </p>
+            </div>
           </div>
-        </label>
+          <div class="gap-5 hidden lg:flex">
+            <a
+              target="_blank"
+              class="hover:text-yellow-300 transition-all duration-300"
+              href="/"
+              >Find a pet</a
+            >
+            <a
+              target="_blank"
+              class="hover:text-yellow-300 transition-all duration-300"
+              href="/"
+              >Breeds</a
+            >
+            <a
+              target="_blank"
+              class="hover:text-yellow-300 transition-all duration-300"
+              href="/"
+              >Contact us</a
+            >
+          </div>
+          <div class="hidden lg:flex gap-4 items-center">
+            <div class="flex gap-2">
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none">
+                <path
+                  d="M22.555 13.662L20.655 6.826C20.0981 4.82333 18.8877 3.06429 17.2163 1.82847C15.5449 0.592652 13.5084 -0.0490142 11.4304 0.00546594C9.3525 0.0599461 7.35239 0.807446 5.74805 2.12915C4.1437 3.45085 3.02719 5.2709 2.57598 7.3L1.10498 13.915C0.942497 14.6459 0.946254 15.404 1.11597 16.1333C1.2857 16.8626 1.61705 17.5445 2.08556 18.1286C2.55408 18.7126 3.1478 19.184 3.82289 19.508C4.49798 19.8319 5.2372 20 5.98598 20H7.09998C7.3295 21.1303 7.94271 22.1465 8.83572 22.8764C9.72874 23.6063 10.8466 24.005 12 24.005C13.1533 24.005 14.2712 23.6063 15.1642 22.8764C16.0573 22.1465 16.6705 21.1303 16.9 20H17.738C18.5088 20.0001 19.2692 19.8219 19.9597 19.4794C20.6503 19.137 21.2523 18.6395 21.7188 18.0259C22.1853 17.4122 22.5036 16.699 22.6488 15.942C22.794 15.185 22.7613 14.4047 22.555 13.662ZM12 22C11.3817 21.9974 10.7794 21.8039 10.2753 21.4459C9.77121 21.0879 9.39007 20.5829 9.18398 20H14.816C14.6099 20.5829 14.2288 21.0879 13.7247 21.4459C13.2206 21.8039 12.6182 21.9974 12 22ZM20.126 16.815C19.8473 17.1847 19.4863 17.4843 19.0716 17.69C18.6569 17.8957 18.1999 18.0018 17.737 18H5.98598C5.53677 17.9999 5.0933 17.899 4.68832 17.7046C4.28334 17.5102 3.92719 17.2273 3.64614 16.8769C3.3651 16.5265 3.16634 16.1174 3.06454 15.6798C2.96274 15.2423 2.9605 14.7875 3.05798 14.349L4.52798 7.733C4.88233 6.13921 5.75929 4.7096 7.01944 3.67145C8.27959 2.63329 9.85061 2.04617 11.4828 2.00341C13.1149 1.96066 14.7145 2.46472 16.0273 3.43547C17.3401 4.40622 18.2907 5.78795 18.728 7.361L20.628 14.197C20.7535 14.6424 20.7735 15.1109 20.6864 15.5653C20.5992 16.0198 20.4074 16.4477 20.126 16.815Z"
+                  fill="#111111"
+                />
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M23.707 22.293L17.738 16.324C19.3647 14.3346 20.1644 11.7961 19.9719 9.23356C19.7793 6.67103 18.6092 4.28053 16.7036 2.55652C14.798 0.83251 12.3026 -0.0931084 9.73367 -0.0288765C7.16472 0.0353553 4.71873 1.08452 2.90164 2.90161C1.08455 4.7187 0.035382 7.16469 -0.0288498 9.73364C-0.0930816 12.3026 0.832537 14.798 2.55655 16.7036C4.28056 18.6092 6.67106 19.7793 9.23359 19.9718C11.7961 20.1644 14.3346 19.3646 16.324 17.738L22.293 23.707C22.4816 23.8892 22.7342 23.99 22.9964 23.9877C23.2586 23.9854 23.5094 23.8802 23.6948 23.6948C23.8803 23.5094 23.9854 23.2586 23.9877 22.9964C23.99 22.7342 23.8892 22.4816 23.707 22.293ZM10 18C8.41778 18 6.87106 17.5308 5.55546 16.6518C4.23987 15.7727 3.21449 14.5233 2.60899 13.0615C2.00349 11.5997 1.84506 9.99113 2.15374 8.43928C2.46243 6.88743 3.22435 5.46197 4.34317 4.34315C5.46199 3.22433 6.88746 2.4624 8.4393 2.15372C9.99115 1.84504 11.5997 2.00346 13.0615 2.60896C14.5233 3.21446 15.7727 4.23984 16.6518 5.55544C17.5308 6.87103 18 8.41775 18 10C17.9976 12.121 17.154 14.1544 15.6543 15.6542C14.1545 17.154 12.121 17.9976 10 18Z"
+                  fill="#111111"
+                />
+              </svg>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="border-2 border-yellow-300 bg-transparent px-5 py-2 rounded-lg cursor-pointer hover:bg-yellow-300 transition-all duration-500"
+              >
+                Login
+              </button>
+              <button
+                class="border-2 border-yellow-300 bg-yellow-300 px-5 py-2 rounded-lg cursor-pointer hover:bg-yellow-400 hover:border-yellow-400 transition-all duration-500"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+          <label class="lg:hidden scale-[2]">
+            <div
+              class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
+            >
+              <input class="hidden peer" type="checkbox" />
+              <div
+                class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
+              ></div>
+              <div
+                class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
+              ></div>
+              <div
+                class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
+              ></div>
+            </div>
+          </label>
+        </div>
       </nav>
-      <section></section>
+
+      <section id="banner" class="max-w-[1000px] mx-auto mt-24 flex flex-col">
+        <div class="z-10 mx-4">
+          <h1 class="adlam text-xl lg:text-5xl w-full xl:w-2/4 leading-[1.4]">
+            Pamper Your Pet, Because They Deserve the Best
+          </h1>
+          <p class="text-[#111111] text-sm lg:text-base w-full xl:w-2/4 my-6">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="border-2 border-yellow-300 bg-yellow-300 px-5 py-2 rounded-lg cursor-pointer hover:bg-yellow-400 hover:border-yellow-400 transition-all duration-500"
+          >
+            Find a pet
+          </button>
+        </div>
+        <div
+          class="w-full flex text-center justify-center align-middle items-center"
+        >
+          <img
+            class="mt-[-100px] lg:-mt-96"
+            src="./assets/cat-big.png"
+            alt="Banner Image Of A Cat"
+          />
+        </div>
+      </section>
     </header>
   </body>
 </html>
