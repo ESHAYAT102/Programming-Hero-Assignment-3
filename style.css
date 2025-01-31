@@ -14,3 +14,30 @@ nav {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+.btn {
+  animation: animation 3s ease infinite;
+}
+
+@keyframes animation {
+  0% {
+    background-color: #ffdf20;
+    border: 1px solid #ffdf20;
+  }
+  25% {
+    background-color: #206eff;
+    border: 1px solid #206eff;
+  }
+  50% {
+    background-color: #ff20fb;
+    border: 1px solid #ff20fb;
+  }
+  75% {
+    background-color: #ff2045;
+    border: 1px solid #ff2045;
+  }
+  100% {
+    background-color: #ffdf20;
+    border: 1px solid #ffdf20;
+  }
+}
